@@ -28,8 +28,8 @@ class RegistrationPage(BasePage):
 
     def registration(self):
         for input_field, input_text in zip(self.inputs, input_texts):
-            self._input(input_field, input_text)
+            self.Pinput(input_field, input_text)
 
     def login(self):
         for input_field, input_text in zip([self.INPUT_EMAIL, self.INPUT_PASSWORD], [email, passw, conpassw]):
-            self._input(input_field, input_text)
+            self.Pinput(input_field, input_text)
