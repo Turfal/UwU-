@@ -8,7 +8,7 @@ service = ChromeService()
 driver = webdriver.Chrome(service=service)
 
 
-def pytest_(parser):
+def pyte(parser):
     parser.addoption("--browser", default="chrome")
 
 

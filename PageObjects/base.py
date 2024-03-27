@@ -45,14 +45,12 @@ class BasePage:
         result_text = value[randint(0, len(value) - 1)] if isinstance(value, list) else value
 
         for letter in result_text:
-            time.sleep(3)
+            time.sleep(0.1)
             element.send_keys(letter)
-        time.sleep(1)
 
     def Pinput(self, element, value):
         try:
             self.click(element)
             self.write(element, value)
-            time.sleep(1)
         except Exception as e:
             print(f"An error occurred: {e}")
